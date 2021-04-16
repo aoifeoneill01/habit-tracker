@@ -1,0 +1,26 @@
+{
+  "habits": [
+    {
+      "title": "Drink 2l water",
+      "id": 2,
+      "mon": false,
+      "tue": false,
+      "wed": false,
+      "thur": true,
+      "fri": true,
+      "sat": false,
+      "sun": false
+    },
+    {
+      "title": "Meditation",
+      "mon": false,
+      "tue": false,
+      "wed": false,
+      "thur": false,
+      "fri": true,
+      "sat": false,
+      "sun": false,
+      "id": 3
+    }
+  ]
+}

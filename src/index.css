@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: objektiv-mk1, sans-serif, 'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+header{
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+header h1 {
+  text-align: center;
+  font-weight: 300;
+  color: #606060;
+  text-align: center;
+  width: 100%;
+}
+button{
+  background-color: #525FFF;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 15px 25px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  margin-left: 5%;
+  position: absolute;
+  font-weight: 700;
+  z-index: 2;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #4250FF;
+}
+button:active, button:focus{
+  outline: none;
+}
+
+/* Week Component */
+.week-view div{
+  padding: 0 20px;
+  text-align: center;
+}
+.week-view div p{
+  margin: 5px 0;
+  color: #9F9F9F;
+}
+.week-view div p:nth-child(1){
+  font-size: 18px;
+}
+.week-view{
+  padding-left: 5%;
+}
+.currentDay p{
+  color: #525FFF !important;
+}
+
+/* Add Habit Form */
+form{
+  width: 250px;
+  height: 230px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 90px 50px 50px;
+  margin: 0 auto;
+  position: absolute;
+  top: 47px;
+  left: 5%;
+  background-color: white;
+  z-index: 1;
+}
+label{
+  padding-left: 10px;
+}
+input{
+  border: none;
+  margin: 20px 0;
+  padding: 15px 10px;
+  font-size: 16px;
+  width: 100%;
+  background-color: #F8F9FF;
+  border-radius: 8px;
+}
+input:active, input:focus{
+  outline: none;
+}
+label, input {
+  color: #606060;
+}
+.submit-btn{
+  background-color: #3F3F3F;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 70px;
+}
+.submit-btn:hover{
+  cursor: pointer;
+  background-color: black;
+}
+.habit{
+  border: 2px solid #525FFF;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px 30px 10px 0;
+}
+.habit-table{
+  margin: 5% 5% 5% 0;
+  display: grid;
+  grid-template-columns: 5% repeat(8, auto);
+}
+.habit-table div{
+  text-align: center;
+  align-self: center;
+}
+.habit-table p{
+  color: #606060;
+}
+.month{
+  justify-self: flex-end;
+  font-size: 24px;
+  grid-column-start: 2;
+  margin-right: 30px;
+}
+.month p{
+  color: rgba(0,0,0,0.3);
+}
+.tick-icon img{
+  width: 40px;
+}
+.tick-icon:hover, .delete-icon:hover  {
+  cursor: pointer;
+}
+.tick-icon img{
+  opacity: 0;
+  transition: .5s opacity;
+}
+.tick-checked{
+  opacity: 1 !important;
+}
+.delete-icon{
+  width: 30px;
+  place-self: center;
+  opacity: 0.1;
+  transition: .5s opacity;
+}
+.delete-icon:hover, .tick-icon img:hover{
+  opacity: 1;
+}
+.display{
+  display: none;
+}
