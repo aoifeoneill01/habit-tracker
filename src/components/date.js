@@ -10,6 +10,7 @@ const Week = () => {
     // Show Dates
     const thisDay = d.getDay();
     const todaysDate = d.getDate();
+    console.log(thisDay);
 
     // Get Mondays Date
     const getMon = () => {
@@ -29,7 +30,7 @@ const Week = () => {
     if (thisDay > 2) {
         return todaysDate - (thisDay - 2)
      } else if (thisDay < 2) {
-         return todaysDate + 1
+         return todaysDate + (2 - thisDay)
      } else if (thisDay === 2) {
          return todaysDate
      }
@@ -41,7 +42,7 @@ const Week = () => {
         if (thisDay > 3) {
            return todaysDate - (thisDay - 3)
         } else if (thisDay < 3) {
-            return todaysDate + 1
+            return todaysDate + (3 - thisDay)
         } else if (thisDay === 3) {
             return todaysDate
         }
@@ -53,7 +54,7 @@ const Week = () => {
         if (thisDay > 4) {
            return todaysDate - (thisDay - 4)
         } else if (thisDay < 4) {
-            return todaysDate + 1
+            return todaysDate + (4 - thisDay)
         } else if (thisDay === 4) {
             return todaysDate
         }
@@ -65,7 +66,7 @@ const Week = () => {
         if (thisDay > 5) {
            return todaysDate - (thisDay - 5)
         } else if (thisDay < 5) {
-            return todaysDate + 1
+            return todaysDate + (5 - thisDay)
         } else if (thisDay === 5) {
             return todaysDate
         }
@@ -77,7 +78,7 @@ const Week = () => {
         if (thisDay > 6) {
            return todaysDate - (thisDay - 6)
         } else if (thisDay < 6) {
-            return todaysDate + 1 
+            return todaysDate + (6 - thisDay)
         } else if (thisDay === 6) {
             return todaysDate
         }

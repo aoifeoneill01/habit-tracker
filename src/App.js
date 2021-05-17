@@ -63,8 +63,6 @@ const fetchHabit =  async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckMon =  { ...HabitToCheck, mon: !HabitToCheck.mon }
 
-
-
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',
       headers: {'Content-type': 'application/json'},
@@ -83,8 +81,6 @@ const fetchHabit =  async (id) => {
   const checkTue = async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckTue =  { ...HabitToCheck, tue: !HabitToCheck.tue }
-
-
 
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',
@@ -105,8 +101,6 @@ const fetchHabit =  async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckWed =  { ...HabitToCheck, wed: !HabitToCheck.wed }
 
-
-
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',
       headers: {'Content-type': 'application/json'},
@@ -125,8 +119,6 @@ const fetchHabit =  async (id) => {
   const checkThur = async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckThur =  { ...HabitToCheck, thur: !HabitToCheck.thur }
-
-
 
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',
@@ -147,8 +139,6 @@ const fetchHabit =  async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckFri =  { ...HabitToCheck, fri: !HabitToCheck.fri }
 
-
-
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',
       headers: {'Content-type': 'application/json'},
@@ -168,8 +158,6 @@ const fetchHabit =  async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckSat =  { ...HabitToCheck, sat: !HabitToCheck.sat }
 
-
-
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',
       headers: {'Content-type': 'application/json'},
@@ -188,8 +176,6 @@ const fetchHabit =  async (id) => {
   const checkSun = async (id) => {
     const HabitToCheck = await fetchHabit(id)
     const updateCheckSun =  { ...HabitToCheck, sun: !HabitToCheck.sun }
-
-
 
     const res = await fetch(`http://localhost:5000/habits/${id}`, {
       method: 'PUT',

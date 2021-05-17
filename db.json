@@ -6,8 +6,8 @@
       "mon": false,
       "tue": false,
       "wed": false,
-      "thur": true,
-      "fri": true,
+      "thur": false,
+      "fri": false,
       "sat": false,
       "sun": false
     },
@@ -17,10 +17,21 @@
       "tue": false,
       "wed": false,
       "thur": false,
-      "fri": true,
+      "fri": false,
       "sat": false,
       "sun": false,
       "id": 3
+    },
+    {
+      "title": "Workout",
+      "mon": false,
+      "tue": false,
+      "wed": false,
+      "thur": false,
+      "fri": false,
+      "sat": false,
+      "sun": false,
+      "id": 4
     }
   ]
 }
